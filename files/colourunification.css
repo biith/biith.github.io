@@ -1,0 +1,61 @@
+
+/* settings */
+:root {
+
+    --color-blue: 61, 180, 242;
+    --color-blue-dim: 141, 178, 219;
+}
+  .site-theme-dark {
+    --color-background: 11, 22, 34;
+    --color-foreground: 21, 31, 46;
+    --color-text: 159, 173, 189;
+  }
+  
+  .site-theme-contrast {
+    --color-background: 229, 235, 241;
+    --color-foreground: 251, 251, 251;
+    --color-text: 38, 52, 63;
+  }
+  
+  /* code */
+  :root,
+  .site-theme-dark,
+  .site-theme-contrast {
+    /* color simplification */
+    --color-text-light: var(--color-text), .7;
+    --color-text-lighter: var(--color-text), .8;
+    --color-foreground-grey: var(--color-black), .3;
+    --color-foreground-grey-dark: var(--color-black), .5;
+    --color-shadow-blue: var(--color-shadow-dark);
+    --color-background-100: var(--color-foreground);
+    --color-background-200: var(--color-foreground-grey);
+    --color-gray-100: var(--color-foreground);
+    --color-gray-600: var(--color-text-light);
+    --color-gray-700: var(--color-text);
+    --color-gray-800: var(--color-text);
+    --color-gray-900: var(--color-white), .8;
+  }
+  
+  /* color integration */
+  #app > div > .footer {
+    background: rgb(var(--color-foreground-grey));
+    color: rgb(var(--color-text));
+  }
+  .footer > div > div > h2 {
+    color: rgb(var(--color-blue));
+  }
+  .site-theme-dark .nav-unscoped,
+  .site-theme-dark .nav-unscoped.transparent:hover {
+    background: rgb(var(--color-foreground));
+    color: rgb(var(--color-text));
+  }
+  .site-theme-dark .nav-unscoped.transparent {
+    background: rgb(var(--color-foreground), .5);
+    color: rgb(var(--color-white), .8);
+  }
+  
+  /* theme picker fix */
+  .dark {
+    background: rgb(21, 31, 46);
+    color: rgb(159, 173, 189);
+  }
