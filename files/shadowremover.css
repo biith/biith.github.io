@@ -1,0 +1,20 @@
+/*
+removing shadows
+inspiration from https://github.com/anzuftnw
+*/
+
+/*remove shadow from nav bar dropdown using #nav selector and .dropdown class*/
+
+#nav .dropdown{
+    box-shadow: none;
+}
+
+/*remove shadow from name by inspecting element on anilist*/
+.banner-content h1.name{
+    filter:none;
+}
+
+.banner .shadow{
+    display: none;
+}
+
