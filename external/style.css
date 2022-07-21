@@ -20,6 +20,10 @@ body {
   background-size: cover;
 }
 
+.title{
+    font-weight: bold;
+}
+
 .markdown-body {
   box-sizing: border-box;
   min-width: 200px;
